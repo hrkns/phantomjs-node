@@ -327,7 +327,7 @@ export default class Phantom {
      * Clean up and force kill this process
      */
     kill(errmsg: string = 'Phantom process was killed'): void {
-        this._rejectAllCommands(errmsg);
+        //this._rejectAllCommands(errmsg);
         this.process.kill('SIGKILL');
     }
 
