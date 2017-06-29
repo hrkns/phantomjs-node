@@ -328,6 +328,7 @@ export default class Phantom {
      */
     kill(errmsg: string = 'Phantom process was killed'): void {
         //this._rejectAllCommands(errmsg);
+        console.log('KILLING');
         this.process.kill('SIGKILL');
     }
 
